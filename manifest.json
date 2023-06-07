@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Password Peek",
+    "description": "Chrome extension that lets you see your passwords before you submit them.",
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["script.js"]
+      }],
+    "permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
